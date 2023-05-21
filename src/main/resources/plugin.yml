@@ -1,0 +1,19 @@
+name: EssentialsNX
+version: '${project.version}'
+main: me.tc6.essentialsnx.EssentialsNX
+api-version: 1.19
+authors: [ TC6 ]
+description: EssentialsNX Core created by TC6
+commands:
+  gm:
+    description: Change player gamemode
+    usage: /gm <0/1/2/3> [player]
+    aliases: /gamemode
+
+  servermanager:
+    description: Server Manager for Admins
+    usage: /servermanager
+
+  anticheat:
+    description: Toggle on/off Anticheat Notifications
+    usage: /anticheat
