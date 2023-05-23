@@ -13,7 +13,3 @@ commands:
   servermanager:
     description: Server Manager for Admins
     usage: /servermanager
-
-  anticheat:
-    description: Toggle on/off Anticheat Notifications
-    usage: /anticheat

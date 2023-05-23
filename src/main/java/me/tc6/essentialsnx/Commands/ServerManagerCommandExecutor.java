@@ -42,7 +42,7 @@ public class ServerManagerCommandExecutor implements CommandExecutor {
             }
 
             sender.sendMessage(ChatColor.GOLD + "----------------------------------------------------------------");
-            sender.sendMessage(ChatColor.GREEN + "Server Performance:");
+            sender.sendMessage(ChatColor.GREEN.BOLD +  "Server Performance:");
             sender.sendMessage(ChatColor.GRAY + "Memory: " + memoryColor + usedMemory + "MB" + " / " + maxMemory + "MB");
             sender.sendMessage(ChatColor.GRAY + "Free Memory: " + ChatColor.WHITE + freeMemory2 + "MB");
             sender.sendMessage(ChatColor.GRAY + "CPU Usage: " + ChatColor.WHITE + String.format("%.2f", cpuUsage) + "%");

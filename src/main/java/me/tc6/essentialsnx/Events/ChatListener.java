@@ -18,16 +18,17 @@ public class ChatListener implements Listener {
         String message = event.getMessage();
         int experienceLevel = player.getLevel();
 
-        String nlevel;
+        String color;
         if (experienceLevel >= 100) {
-            nlevel = ChatColor.GOLD + "[" + experienceLevel + "✫] ";
+            color = String.valueOf(ChatColor.GOLD);
         } else if (experienceLevel >= 50) {
-            nlevel = ChatColor.YELLOW + "[" + experienceLevel + "✫] ";
+            color = String.valueOf(ChatColor.YELLOW);
         } else if (experienceLevel >= 20) {
-            nlevel = ChatColor.WHITE + "[" + experienceLevel + "✫] ";
+            color = String.valueOf(ChatColor.WHITE);
         } else {
-            nlevel = ChatColor.GRAY + "[" + experienceLevel + "✫] ";
+            color = String.valueOf(ChatColor.GRAY);
         }
+        String nlevel = color + "[" + experienceLevel + "✫] ";
 
         String prefix = getPrefix(playerName);
 
